@@ -1,1 +1,1 @@
-Projekat iz predmeta Web programiranje
+Projekat iz predmeta Web programiranja
