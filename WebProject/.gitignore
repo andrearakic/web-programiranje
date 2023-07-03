@@ -1,2 +1,8 @@
+# Eclipse build and class path entries
+/.classpath
+/.project
+/.settings/
+/bin/
+/target/
 /build/
 /bin/
