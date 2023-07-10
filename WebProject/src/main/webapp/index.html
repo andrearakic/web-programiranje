@@ -1,17 +1,40 @@
 <!DOCTYPE html>
 <html>
 <head>
+	<meta charset="ISO-8859-1">
+	
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="https://code.jquery.com/jquery-3.2.1.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+	<link rel="stylesheet" href="./css/register.css">
+
   <title>Rent a car</title>
-</head>
+	</head>
 <body>
-  <div id="app">
-    <div>
-	  <button @click="goToHome">Home</button>
-      <button @click="goToLogin">Login</button>
-      <button @click="goToRegistration">Registration</button>
-    </div>
-    <router-view></router-view>
-  </div>
+	
+	<div id="app">
+            <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                            <ul class="navbar-nav mr-auto">
+                                     <li class="nav-item active">
+        								<a class="nav-link navbar-brand" onclick="goToHome()" href="" id="home">Home <span class="sr-only">(current)</span></a>
+    							    </li>
+                                    
+                            </ul>    
+
+                            <button class="btn  navbar-brand"  @click="goToLogin()" >Sign in</button>
+                            <button class="btn  navbar-brand"  @click="goToRegistration()" >Sign up</button>
+                            
+                          
+                    </div>        	
+            </nav>
+
+            
+         <router-view></router-view>
+
+        </div>    
+
   
   <!-- Step 1: Import Vue //-->
   <script src="js/vue.js"></script>
@@ -22,6 +45,5 @@
   <script src="js/components/home.js"></script>
   <!-- Step 3: Import app.js //-->
   <script src="js/app.js"></script>
-
 </body>
 </html>
